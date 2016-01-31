@@ -1,0 +1,30 @@
+{
+  "name": "webpack-starter-kit",
+  "version": "0.0.1",
+  "description": "Webpack + Babel6 + Page.js starter kit",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/*",
+    "pre-build": "npm run lint",
+    "build": "webpack -p --bail",
+    "lint": "jshint src/"
+  },
+  "author": "Vishal Doshi <vishal.doshi@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.7.2",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "jquery": "^2.2.0",
+    "page": "^1.6.4"
+  }
+}
