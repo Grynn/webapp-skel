@@ -1,14 +1,14 @@
 {
   "name": "webpack-starter-kit",
   "version": "0.0.1",
-  "description": "Webpack + Babel6 + Page.js starter kit",
+  "description": "Webpack + Babel + Page.js starter kit",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf dist/*",
-    "pre-build": "npm run lint",
-    "build": "webpack -p --bail",
-    "lint": "jshint src/"
+    "test": "make test",
+    "clean": "make clean",
+    "build": "make",
+    "lint": "make lint",
+    "start": "make && webpack-dev-server -w"
   },
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
   "license": "ISC",
@@ -16,15 +16,25 @@
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2017": "^6.16.0",
     "css-loader": "^0.23.1",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-import-resolver-webpack": "^0.6.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.7.2",
-    "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1"
+    "opn": "^4.0.2",
+    "webpack": "^2.1.0-beta",
+    "webpack-browser-plugin": "^1.0.12",
+    "webpack-dev-server": "^2.1.0-beta",
+    "webpack-fail-plugin": "^1.0.5"
   },
   "dependencies": {
-    "debug": "^2.2.0",
-    "jquery": "^2.2.0",
-    "page": "^1.6.4"
+    "debug": "2.x",
+    "jquery": "3.x",
+    "page": "1.x"
   }
 }
